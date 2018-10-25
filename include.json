@@ -1,0 +1,26 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-2"
+            ],
+            "body": [
+                "slider/s-1",
+                "tabs/t-1",
+                "carousel/clients",
+                "carousel/choose",
+				"form/f-1",
+				"introduce/",
+				"img-section/",
+				"img-section-2/",
+				"img-section-3/",
+				"about/",
+				"touch/",
+				"video/"
+            ],
+            "footer": [
+                "footer/f-5"
+            ]
+        }
+    }
+}

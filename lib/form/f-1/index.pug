@@ -1,0 +1,35 @@
+//-form contact
+
+section.canhcam-form-1#contact
+	.row
+		.col-md-3.offset-md-2.location
+			h4.h4 Our Location
+			address 28 Đường số 2, phường 7, Gò Vấp, TP.Hồ Chí Minh
+			phone Sdt: 0888911880
+			.social-icon
+				ul.list-inline.icon
+					li.list-inline-item
+						a(href="#")
+							i.mdi.mdi-twitter
+					li.list-inline-item
+						a(href="#")
+							i.mdi.mdi-facebook
+					li.list-inline-item
+						a(href="#")
+							i.mdi.mdi-linkedin
+		.col-md-5.form
+			form.validator
+				.row
+					.form-group.col-md-6
+						input#name.form-control(type='text', placeholder='Name', data-error="Vui lòng nhập thông tin", required)
+						.help-block.with-errors
+					.form-group.col-md-6
+						input#Email.form-control(type='text', placeholder='Email', data-error="Vui lòng nhập thông tin", pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required)
+						.help-block.with-errors
+				.row
+					.form-group.col
+						textarea#sms.form-control(name="sms", cols="1", rows="1" placeholder='Message')
+				.row
+					.col
+						button.btn.btn-outline-primary.text-uppercase(type="submit")
+							| Send

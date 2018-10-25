@@ -1,0 +1,43 @@
+// // Set Link Hover
+=link ($link, $hover:$link, $active:$link, $visit:$link)
+	color: #{$link}
+	&:visited
+		color: #{$visit}
+	&:hover
+		color: #{$hover}
+	&:active, &:focus , &.active, &.activated
+		color: #{$active}
+
+// Set bg hover
+=bg ($link, $hover:$link, $active:$link)
+	@if $link != "none"
+		background-color: #{$link}
+		&:hover
+			background-color: #{$hover}
+		&:active, &:focus , &.active, &.activated
+			background-color: #{$active}
+	@else
+		background: none
+		&:hover
+			background-color: #{$hover}
+		&:active, &:focus , &.active, &.activated
+			background-color: #{$active}
+=h2_before()
+	position: relative
+	display: inline-block
+	font-size: 1.5rem
+	font-weight: 900
+	text-transform: uppercase
+	margin-bottom: 2.5rem
+	&:before
+		content: ''
+		display: inline-block
+		position: absolute
+		top: calc(100% + 1rem)
+		left: 50%
+		width: 50%
+		transform: translateX(-50%)
+		border-bottom: 2px solid #222222
+=btn-more()
+	&:hover
+		border-color: #ffc107

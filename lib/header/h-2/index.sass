@@ -1,0 +1,40 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-header-2
+	background: color-get($mau,trang)
+	border-bottom: 1px solid darken(color-get($mau,trang),20%)
+	.navbar-collapse
+		position: relative
+	.navbar-toggler
+		border: 1px solid darken(color-get($mau,trang),20%)
+		+pad(.5rem)
+		+bor-rad(50%)
+		line-height: 1rem
+		align-items: center
+		justify-content: center
+		.fa
+			line-height: 1.4rem
+			width: 1.3rem
+			height: 1.3rem
+			font-size: 1.3rem
+			color: color-get($mau,main)
+		&:focus
+			outline: none
+	.navbar-brand
+		img
+			max-height: 2rem
+	+media-breakpoint-up(xl)
+		.navbar-nav
+			.nav-item
+				.nav-link
+					+pad(.5rem 1rem)
+					font-size: 1.3rem
+			&.active
+				input
+					+opacity(1)
+					width: 200px
+					padding-left: 1rem
+					padding-right: .5rem

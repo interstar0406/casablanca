@@ -1,0 +1,55 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-form-1
+	background-color: #f2f2f2
+	.row
+		max-width: 100%
+	.location
+		+media-breakpoint-up(md)
+			address
+				text-align: left
+			align-items: flex-start
+			.social-icon
+				width: 100%
+				text-align: center
+		background-color: #f2f2f2
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		text-align: center
+		padding: 2rem
+		.h4
+			font-weight: 500
+		.h4,
+		address
+			margin-bottom: 1rem
+		ul
+			margin-top: 1rem
+			text-align: center
+		a
+			color: #000000
+			i
+				font-size: 1.5rem
+	.form
+		background-color: #e4e4e4
+		padding: 2rem 4rem 2rem 2rem
+		form
+			text-align: right
+			.help-block
+				ul
+					margin-bottom: 0
+					+fz(.9rem)
+					color: color-get($mau,do-1)
+			.form-control
+				border: none
+				background: #e4e4e4
+				border-bottom: 1px solid #ced4da
+		.btn.btn-outline-primary.text-uppercase
+			text-align: center
+			color: #000000
+			border: 2px solid #000000
+			border-radius: none
