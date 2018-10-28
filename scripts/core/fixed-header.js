@@ -6,7 +6,7 @@ function setHeader(elm) {
 	}
 }
 
-$(document).ready(function () {
+$(document).ready(function () { 
 	if (CANHCAM_APP.ACTIVE_FIXED_HEADER) {
 		$("header").addClass('fixedheader');
 		if ($(window).scrollTop() >= CANHCAM_APP.ACTIVE_HEADER_POSITION) {

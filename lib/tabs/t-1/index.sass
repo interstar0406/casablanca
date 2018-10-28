@@ -4,7 +4,7 @@
 //////////////////////////////////////
 
 .canhcam-tabs-1
-	+pad(2rem 0)
+	+pad(4rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
 	.container
@@ -18,10 +18,11 @@
 		.nav-item
 			a
 				color: #000000
-			&:hover
+			&:hover,
+			&.active
 				a
 					text-decoration: underline
-					color: color-get($mau,main)
+					color: color-get($mau,extra)
 		.btn-show
 			background: #fff
 			border: 2px solid #000000

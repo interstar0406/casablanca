@@ -4,8 +4,6 @@
 //////////////////////////////////////
 
 .canhcam-header-2
-	background: color-get($mau,trang)
-	border-bottom: 1px solid darken(color-get($mau,trang),20%)
 	.navbar-collapse
 		position: relative
 	.navbar-toggler
@@ -20,7 +18,7 @@
 			width: 1.3rem
 			height: 1.3rem
 			font-size: 1.3rem
-			color: color-get($mau,main)
+			color: color-get($mau,trang)
 		&:focus
 			outline: none
 	.navbar-brand
@@ -29,6 +27,12 @@
 	+media-breakpoint-up(xl)
 		.navbar-nav
 			.nav-item
+				&:hover,
+				&:focus
+					background-color: #fff
+					border-radius: 10px 0 10px 0
+					.nav-link
+						color: #6c757d
 				.nav-link
 					+pad(.5rem 1rem)
 					font-size: 1.3rem
@@ -38,3 +42,17 @@
 					width: 200px
 					padding-left: 1rem
 					padding-right: .5rem
+.canhcam-header-2
+	&.expand
+		background: rgba(0,0,0,0.5)
+		.nav-link
+			text-align: center
+			color: #ffffff
+			font-size: 1.2rem
+			font-weight: 600
+.canhcam-header-2
+	&.active
+		background: #343a40
+		.nav-link
+			text-align: center
+			color: #aaa

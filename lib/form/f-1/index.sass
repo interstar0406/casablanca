@@ -8,20 +8,20 @@
 	.row
 		max-width: 100%
 	.location
-		+media-breakpoint-up(md)
-			address
-				text-align: left
-			align-items: flex-start
-			.social-icon
-				width: 100%
-				text-align: center
 		background-color: #f2f2f2
 		display: flex
 		flex-direction: column
 		justify-content: center
 		align-items: center
 		text-align: center
-		padding: 2rem
+		padding: 4rem 2rem
+		+media-breakpoint-up(md)
+			align-items: flex-start
+			address
+				text-align: left
+			.social-icon
+				width: 100%
+				text-align: center
 		.h4
 			font-weight: 500
 		.h4,
@@ -36,7 +36,7 @@
 				font-size: 1.5rem
 	.form
 		background-color: #e4e4e4
-		padding: 2rem 4rem 2rem 2rem
+		padding: 4rem 4rem 4rem 3rem
 		form
 			text-align: right
 			.help-block
