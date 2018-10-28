@@ -15,14 +15,11 @@ package-lock.json
 logs
 *.log
 *.lock
-*.tmp
-*.tmp.*
 log.txt
 *.sublime-project
 *.sublime-workspace
 .sass-cache/
 .versions/
-tmp/
 temp/
 dist/
 www/
