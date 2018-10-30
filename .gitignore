@@ -21,7 +21,6 @@ log.txt
 .sass-cache/
 .versions/
 temp/
-dist/
 www/
 wwwroot/
 
@@ -68,8 +67,6 @@ npm-debug.log
 /public/__build__/
 /src/*/__build__/
 /__build__/**
-/public/dist/
-/src/*/dist/
 .webpack.json
 
 # IDE #
